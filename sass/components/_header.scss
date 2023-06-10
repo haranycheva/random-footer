@@ -1,6 +1,8 @@
 .header {
+  background-color: #fff1da;
   @media screen and (max-width: 767.98px) {
     padding-top: 37px;
+    padding-bottom: 98px;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -45,6 +47,7 @@
   &__languases {
     display: flex;
     align-items: center;
+    gap: 7px;
     @media screen and (max-width: 767.98px) {
       padding-right: 45px;
     }
@@ -55,7 +58,7 @@
   }
   &__burger {
     position: absolute;
-    right: -20px;
+    right: 20px;
     width: 24px;
     height: 14px;
     background-color: transparent;
@@ -67,11 +70,13 @@
   }
   &__mob-nav {
     margin-top: 93px;
+    font-size: 30px;
+    color: $second-text-color;
     @media screen and (min-width: 768px) {
       display: none;
     }
     &-item {
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: 30px;
       }
       text-align: center;
