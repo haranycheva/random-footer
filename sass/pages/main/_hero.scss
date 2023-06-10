@@ -1,0 +1,30 @@
+.hero {
+  @media screen and (min-width: 768px) {
+    padding-top: 110px;
+    background-image: url(../../../img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text-wrap{
+
+  }
+  &__desc{
+    font-size: 20px;
+    line-height: 1.5;
+    color: $acent-color;
+  }
+  &__title{
+    font-size: 84px;
+    line-height: 1.06;
+    color: #181E4B;
+  }
+
+  &__subtitle{
+    line-height: 1.875;
+  }
+}
