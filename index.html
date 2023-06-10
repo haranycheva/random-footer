@@ -3,14 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Jadoo</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__topline-wrap">
+          <a href="#" class="header__logo link">
+            <svg class="header__logo-icon">
+              <use href="./img/svg/header-logo.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="header__nav-wrap">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Desitnations</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Hotels</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Flights</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Bookings</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__autorization"></div>
+          <div class="header__languases">
+            En
+            <svg class="header__languases-icon">
+              <use href="./img/svg/symbol-defs.svg#icon-down-arrow"></use>
+            </svg>
+          </div>
+          <button class="header__burger">
+            <svg class="header__burger-icon">
+              <use href="./img/svg/symbol-defs.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="header__mob-nav">
+          <ul class="header__mob-nav-list">
+            <li class="header__mob-nav-item">
+              <a href="#" class="header__mob-nav-link">Desitnations</a>
+            </li>
+            <li class="header__mob-nav-item">
+              <a href="#" class="header__mob-nav-link">Hotels</a>
+            </li>
+            <li class="header__mob-nav-item">
+              <a href="#" class="header__mob-nav-link">Flights</a>
+            </li>
+            <li class="header__mob-nav-item">
+              <a href="#" class="header__mob-nav-link">Bookings</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="category">
         <div class="caterory__container">
@@ -61,7 +121,7 @@
           <h2 class="destinations__title">Top Destinations</h2>
           <ul class="destinations-list">
             <li class="destinations-list__item">
-              <img src="" alt="" class="destination-list">
+              <img src="" alt="" class="destination-list" />
               <div class="destination-list__content">
                 <div class="destination-list__topline">
                   <h3 class="destination-list__title">Rome, Italty</h3>
@@ -71,7 +131,7 @@
               </div>
             </li>
             <li class="destinations-list__item">
-              <img src="" alt="" class="destination-list">
+              <img src="" alt="" class="destination-list" />
               <div class="destination-list__content">
                 <div class="destination-list__topline">
                   <h3 class="destination-list__title">London, UK</h3>
@@ -81,7 +141,7 @@
               </div>
             </li>
             <li class="destinations-list__item">
-              <img src="" alt="" class="destination-list">
+              <img src="" alt="" class="destination-list" />
               <div class="destination-list__content">
                 <div class="destination-list__topline">
                   <h3 class="destination-list__title">Full Europe</h3>
@@ -95,23 +155,23 @@
       </section>
       <section class="partners">
         <div class="partners__container">
-            <p class="partners__desc">Top Selling</p>
-            <ul class="partners__list">
-                <li class="partners__item">
-                    <img src="./partner-image1.png" alt="" class="partners__img">
-                </li>
-                <li class="partners__item">
-                    <img src="./partner-image2.png" alt="" class="partners__img">
-                </li>
-                <li class="partners__item">
-                    <img src="./partner-image3.png" alt="" class="partners__img">
-                </li>
-                <li class="partners__item">
-                    <img src="./partner-image4.png" alt="" class="partners__img">
-                </li>
-            </ul>
+          <p class="partners__desc">Top Selling</p>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="./partner-image1.png" alt="" class="partners__img" />
+            </li>
+            <li class="partners__item">
+              <img src="./partner-image2.png" alt="" class="partners__img" />
+            </li>
+            <li class="partners__item">
+              <img src="./partner-image3.png" alt="" class="partners__img" />
+            </li>
+            <li class="partners__item">
+              <img src="./partner-image4.png" alt="" class="partners__img" />
+            </li>
+          </ul>
         </div>
-    </section>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container container">
@@ -126,13 +186,13 @@
             <h3 class="footer__title">Company</h3>
             <ul class="footer-links">
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">About</a>
+                <a href="" class="footer-links__link">About</a>
               </li>
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Careers</a>
+                <a href="" class="footer-links__link">Careers</a>
               </li>
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Mobile</a>
+                <a href="" class="footer-links__link">Mobile</a>
               </li>
             </ul>
           </li>
@@ -140,13 +200,13 @@
             <h3 class="footer__title">Contact</h3>
             <ul class="footer-links">
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Help/FAQ</a>
+                <a href="" class="footer-links__link">Help/FAQ</a>
               </li>
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Press</a>
+                <a href="" class="footer-links__link">Press</a>
               </li>
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Affilates</a>
+                <a href="" class="footer-links__link">Affilates</a>
               </li>
             </ul>
           </li>
@@ -154,13 +214,13 @@
             <h3 class="footer__title">More</h3>
             <ul class="footer-links">
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Airlinefees</a>
+                <a href="" class="footer-links__link">Airlinefees</a>
               </li>
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Airline</a>
+                <a href="" class="footer-links__link">Airline</a>
               </li>
               <li class="footer-links__item">
-                <a href="" class="footer-links__link ">Low fare tips</a>
+                <a href="" class="footer-links__link">Low fare tips</a>
               </li>
             </ul>
           </li>
@@ -201,14 +261,18 @@
                 <li class="applications-links__item">
                   <a href="" class="applications-links__link">
                     <svg class="applications-links__img">
-                      <use href="./img/svg/symbol-defs.svg#icon-google-play"></use>
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-google-play"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li class="applications-links__item">
                   <a href="" class="applications-links__link">
                     <svg class="applications-links__img">
-                      <use href="./img/svg/symbol-defs.svg#icon-apple-store"></use>
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-apple-store"
+                      ></use>
                     </svg>
                   </a>
                 </li>
