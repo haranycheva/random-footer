@@ -1,0 +1,99 @@
+.destinations {
+  &__container {
+    max-width: 420px;
+
+    padding-top: 17px;
+
+    color: $primary-text-color;
+    text-align: center;
+  }
+  &__desc {
+    width: 108px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    font-family: "Volkhov", serif;
+    color: #14183e;
+
+    width: 279px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+}
+
+.destinations-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item {
+    position: relative;
+    width: 300px;
+
+    line-height: 1.245;
+
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  }
+  &__item:nth-child(1){
+    margin-bottom: 76px;
+  }
+  &__item:nth-child(2){
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    width: 97px;
+  }
+  &__price {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__price span{
+    display: block;
+  }
+  &__text-content {
+    background-color: #ffffff;
+    border-radius: 0px 0px 24px 24px;
+    text-align: left;
+
+    width: 300px;
+    height: 130px;
+
+    padding: 30px 0 0 19px;
+
+    position: absolute;
+    bottom: 0;
+  }
+  &__topline {
+    display: flex;
+    gap: 116px;
+  }
+  &__duration{
+    font-weight: 500;
+
+    margin-left: 34px;
+
+    }
+  &__item:not(:first-child) &__duration span{
+    display: block;
+  }
+  &__duration::before{
+    content: "";
+    width: 16px;
+    height:16px;
+
+    background-image: url(../../../img/svg/dest-pointer.svg);
+
+    position: absolute;
+    top: 73px;
+    left: 19px;
+  }
+}
