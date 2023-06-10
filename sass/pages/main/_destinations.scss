@@ -1,11 +1,24 @@
 .destinations {
   &__container {
     max-width: 420px;
+    overflow: hidden; 
 
     padding-top: 17px;
 
+    position: relative;
+
     color: $primary-text-color;
     text-align: center;
+    &::before{
+      content: "";
+      width: 148px;
+      height: 165px;
+      background-image: url(../../../img/svg/dest-pluses.svg);
+
+      position: absolute;
+      top: 7px;
+      left: -41px;
+    }
   }
   &__desc {
     width: 108px;
