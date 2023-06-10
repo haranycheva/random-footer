@@ -14,12 +14,16 @@
 
   }
   &__desc{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
     color: $acent-color;
   }
   &__title{
+    font-family: "Volkhov", serif;
     font-size: 84px;
+    font-weight: 700;
     line-height: 1.06;
     color: #181E4B;
   }

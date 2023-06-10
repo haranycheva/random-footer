@@ -5,6 +5,13 @@ body{
     color: $primary-text-color;
 }
 
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
