@@ -3,7 +3,7 @@
     max-width: 420px;
 
     padding-top: 18px;
-    padding-bottom: 160px;
+    padding-bottom: 194px;
 
     color: $primary-text-color;
     text-align: center;   
@@ -78,8 +78,10 @@
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 36px;
   padding-bottom: 45px;
+  padding-top: 25px;
   width: 273px;
   position: relative;
+  background-color: #FFFFFF;
 }
 
 .category-active::before{
@@ -89,6 +91,10 @@
   height: 101px;
 
   position: absolute;
+  bottom: -33px;
+  left: -36px;
+  z-index: -1;
 
   background: #DF6951;
+  border-radius: 30px 0px 10px;
 }
