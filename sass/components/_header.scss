@@ -22,28 +22,65 @@
   }
   &__logo {
     @media screen and (min-width: 768px) {
-      margin-right: 222px;
+      @include responsive(margin-right, 145, 260, 768, 1200);
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 225px;
     }
   }
   &__nav {
-    font-family: 'Product Sans', sans-serif;
+    @include responsive(margin-right, 40, 150, 768, 1200);
+    font-family: "Product Sans", sans-serif;
     font-size: 17px;
-    font-weight: 500;
     line-height: 1.27;
     color: #212832;
     @media screen and (max-width: 767.98px) {
       display: none;
     }
+    @media screen and (min-width: 1200px) {
+      margin-right: 90px;
+    }
     &-list {
       display: flex;
       align-items: center;
-      gap: 60px;
+      @include responsive(gap, 40, 95, 768, 1199.8);
+      @media screen and (min-width: 1200px) {
+        gap: 60px;
+      }
     }
   }
   &__autorization {
+    display: flex;
+    gap: 52px;
+    margin-right: 42px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.27;
+    color: #212832;
     @media screen and (max-width: 1199.98px) {
       display: none;
     }
+  }
+  &__login {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  &__sing-up {
+    width: 104px;
+    height: 42px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    cursor: pointer;
   }
   &__logo-icon {
     width: 115px;
@@ -54,7 +91,9 @@
     align-items: center;
     gap: 7px;
     font-size: 17px;
+    font-weight: 500;
     line-height: 1.27;
+    color: #212832;
     cursor: pointer;
     @media screen and (max-width: 767.98px) {
       padding-right: 45px;

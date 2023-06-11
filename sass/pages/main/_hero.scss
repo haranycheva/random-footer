@@ -1,18 +1,21 @@
 .hero {
   padding-top: 74px;
+  padding-bottom: 92px;
   @media screen and (min-width: 768px) {
-    padding-top: 110px;
+    padding-top: 217px;
+    padding-bottom: 214px;
     background-image: url(../../../img/hero-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
   }
-
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
   }
   &__text-wrap {
+    @media screen and (min-width: 768px) {
+      width: 589px;
+      margin-right: auto;
+    }
   }
   &__desc {
     margin-bottom: 24px;
@@ -26,8 +29,8 @@
     }
   }
   &__title {
-    max-width: 545px;
     margin-bottom: 19px;
+    padding-left: 45px;
     font-family: "Volkhov", serif;
     @include responsive(font-size, 48, 84, 414, 1200);
     font-weight: 700;
@@ -35,9 +38,10 @@
     color: #181e4b;
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
+      padding-left: 0;
     }
-    @media screen and (min-width:1200px) {
-        font-size: 84px;
+    @media screen and (min-width: 1200px) {
+      font-size: 84px;
     }
   }
 
@@ -49,9 +53,28 @@
     }
   }
   &__buttons-wrap {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 45px;
+    gap: 40px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 114px;
+      height: 156px;
+      top: -24px;
+      right: -8px;
+      background-image: url('../../../img/hero-mob-plus.png');
+      background-repeat: no-repeat;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 45px;
+    }
   }
 
   &__btn-more {
@@ -88,8 +111,15 @@
     }
   }
   &__img-thumb {
-    @media screen and (max-width: 767.98px) {
+    position: absolute;
+    top: -110px;
+    right: 0;
+    @media screen and (max-width: 1100px) {
       display: none;
+    }
+    img {
+      width: 784px;
+      height: 764px;
     }
   }
 }
