@@ -111,7 +111,7 @@
       @include responsive(max-width, 768, 1440, 768, 1440);
 
       @include responsive(padding-top, 18, 92, 768, 1440);
-      @include responsive(padding-bottom, 194, 200, 768, 1440);
+      @include responsive(padding-bottom, 194, 156, 768, 1440);
     }
     &__desk {
       @include responsive(margin-bottom, 24,10, 768, 1440);
@@ -177,7 +177,7 @@
       position: relative;
 
       padding-top: 92px;
-      padding-bottom: 200px;
+      padding-bottom: 156px;
       &::before{
         content: "";
         width: 153px;

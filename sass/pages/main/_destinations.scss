@@ -1,15 +1,16 @@
 .destinations {
   &__container {
     max-width: 420px;
-    overflow: hidden; 
+    overflow: hidden;
 
     padding-top: 17px;
+    padding-bottom: 83px;
 
     position: relative;
 
     color: $primary-text-color;
     text-align: center;
-    &::before{
+    &::before {
       content: "";
       width: 148px;
       height: 165px;
@@ -25,14 +26,14 @@
 
     font-weight: 600;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
 
     margin: 0 auto;
   }
   &__title {
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 1.3;
     font-family: "Volkhov", serif;
     color: #14183e;
 
@@ -52,12 +53,17 @@
 
     line-height: 1.245;
 
-  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+      drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+      drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+      drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+      drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+      drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
   }
-  &__item:nth-child(1){
+  &__item:nth-child(1) {
     margin-bottom: 76px;
   }
-  &__item:nth-child(2){
+  &__item:nth-child(2) {
     margin-bottom: 60px;
   }
   &__title {
@@ -69,7 +75,7 @@
     font-weight: 500;
     font-size: 18px;
   }
-  &__price span{
+  &__price span {
     display: block;
   }
   &__text-content {
@@ -89,24 +95,146 @@
     display: flex;
     gap: 116px;
   }
-  &__duration{
+  &__duration {
     font-weight: 500;
 
     margin-left: 34px;
-
-    }
-  &__item:not(:first-child) &__duration span{
+  }
+  &__item:not(:first-child) &__duration span {
     display: block;
   }
-  &__duration::before{
+  &__duration::before {
     content: "";
     width: 16px;
-    height:16px;
+    height: 16px;
 
     background-image: url(../../../img/svg/dest-pointer.svg);
 
     position: absolute;
     top: 73px;
     left: 19px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    &__container {
+      @include responsive(max-width, 768, 1440, 768, 1440);
+
+      @include responsive(padding-top, 17, 0, 768, 1440);
+      @include responsive(padding-bottom, 83, 186, 768, 1440);
+      &::before {
+        display: none;
+      }
+    }
+    &__desc {
+      @include responsive(width, 108, 100, 768, 1440);
+      margin-bottom: 8px;
+
+      @include responsive(font-size, 20, 18, 768, 1440);
+    }
+    &__title {
+      @include responsive(font-size, 40, 50, 768, 1440);
+
+      @include responsive(width, 278, 418, 768, 1440);
+      @include responsive(margin-bottom, 38, 60, 768, 1440);
+    }
+  }
+
+  .destinations-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 42px;
+    justify-content: center;
+    &__item {
+      position: relative;
+      @include responsive(width, 300, 315, 768, 1440);
+    }
+    &__item:nth-child(2) &__duration,
+    &__item:nth-child(3) &__duration {
+      margin-top: 18px;
+    }
+    &__item:last-child::after {
+      content: "";
+      width: 96px;
+      height: 252px;
+      background-image: url(../../../img/svg/destinations-spring.svg);
+
+      position: absolute;
+      top: 158px;
+      right: -52px;
+      z-index: -1;
+    }
+    &__item:nth-child(1),
+    &__item:nth-child(2) {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-size: 18px;
+      @include responsive(width, 97, 105, 768, 1440);
+    }
+    &__item:nth-child(3) &__price span,
+    &__item:nth-child(2) &__price span {
+      display: inline;
+    }
+    &__text-content {
+      @include responsive(width, 300, 315, 768, 1440);
+
+      @include responsive(padding-top, 30, 27, 768, 1440);
+    }
+    &__topline {
+      @include responsive(gap, 116, 101, 768, 1440);
+    }
+    &__duration {
+      @include responsive(margin-bottom, 34, 52, 768, 1440);
+    }
+    &__item:not(:first-child) &__duration span {
+      display: inline;
+    }
+    &__duration::before {
+      top: 73px;
+      left: 19px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    &__container {
+      max-width: 1440px;
+
+      padding-top: 0;
+      padding-bottom: 186px;
+    }
+    &__desc {
+      width: 100px;
+
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 50px;
+
+      width: 418px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .destinations-list {
+    &__item {
+      width: 315px;
+    }
+    &__title {
+      width: 105px;
+    }
+    &__text-content {
+      width: 315px;
+      padding-top: 27px;
+    }
+    &__topline {
+      gap: 101px;
+    }
+    &__duration {
+      margin-bottom: 52px;
+    }
   }
 }
