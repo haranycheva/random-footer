@@ -1,10 +1,12 @@
 .hero {
+  padding-top: 74px;
   @media screen and (min-width: 768px) {
     padding-top: 110px;
     background-image: url(../../../img/hero-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
   }
+
   &__container {
     display: flex;
     align-items: center;
@@ -13,27 +15,48 @@
   &__text-wrap {
   }
   &__desc {
+    margin-bottom: 24px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
     color: $acent-color;
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
   }
   &__title {
     max-width: 545px;
+    margin-bottom: 19px;
     font-family: "Volkhov", serif;
-    font-size: 84px;
+    @include responsive(font-size, 48, 84, 414, 1200);
     font-weight: 700;
-    line-height: 1.06;
+    line-height: 89px;
     color: #181e4b;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 84px;
+    }
   }
 
   &__subtitle {
+    margin-bottom: 34px;
     line-height: 1.875;
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
   }
+  &__buttons-wrap {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
   &__btn-more {
-    width: 170px;
-    height: 60px;
+    width: 172px;
+    height: 62px;
     background-color: #f1a501;
     border-radius: 10px;
     border-color: transparent;
@@ -50,8 +73,10 @@
       display: inline-block;
       width: 52px;
       height: 52px;
+      margin-right: 21px;
       background-color: $acent-color;
       border-radius: 50%;
+      box-shadow: 0px 15px 30px 0px #df69514d;
     }
     &-icon {
       position: absolute;
@@ -60,6 +85,11 @@
       transform: translate(-35%, -40%);
       width: 15px;
       height: 15px;
+    }
+  }
+  &__img-thumb {
+    @media screen and (max-width: 767.98px) {
+      display: none;
     }
   }
 }
