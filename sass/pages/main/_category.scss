@@ -174,9 +174,20 @@
   .category {
     &__container {
       max-width: 1440px;
+      position: relative;
 
       padding-top: 92px;
       padding-bottom: 200px;
+      &::before{
+        content: "";
+        width: 153px;
+        height: 166px;
+        background-image: url(../../../img/svg/category-pluses.svg);
+
+        position: absolute;
+        top: 92px;
+        right: 58px;
+      }
     }
     &__desk {
       margin-top: 10px;
