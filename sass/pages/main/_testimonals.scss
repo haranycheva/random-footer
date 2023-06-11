@@ -83,3 +83,64 @@
     line-height: 1.5;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .testimonals {
+    &__container {
+      @include responsive(max-width, 768, 1440, 768, 1440);
+      display: flex;
+      justify-content: center;
+      @include responsive(gap, 40, 124, 768, 1440);
+      text-align: left;
+    }
+    &__response{
+      @include responsive(padding-top, 21, 28, 768, 1440);
+      @include responsive(padding-left, 9, 34, 768, 1440);
+      @include responsive(padding-right, 0, 68, 768, 1440);
+      @include responsive(width, 359, 504, 768, 1440);
+      @include responsive(height, 234, 245, 768, 1440);
+      margin: 0;
+      &::before{
+        left: -37px;
+        top: -34px;
+      }
+    }
+    &__text{
+      @include responsive(margin-bottom, 20, 34, 768, 1440);
+    }
+    &__desc{
+      margin-bottom: 8px;
+      @include responsive(font-size, 20, 18, 768, 1440);
+      text-transform: uppercase;
+    }
+    &__tittle {
+      @include responsive(font-size, 40, 50, 768, 1440);
+  
+      margin: 0 auto;
+      @include responsive(width, 287, 409, 768, 1440);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonals {
+    &__container {
+      max-width: 1440px;
+      gap: 124px;
+    }
+    &__response{
+      padding-top: 28px;
+      padding-left: 34px;
+      padding-right: 68px;
+      width: 504px;
+      height: 245px;
+    }
+    &__desc{
+      font-size: 18px;
+    }
+    &__tittle {
+      font-size: 50px;
+      width: 409px;
+    }
+  }
+}
