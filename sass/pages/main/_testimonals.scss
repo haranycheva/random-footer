@@ -88,6 +88,7 @@
   .testimonals {
     &__container {
       @include responsive(max-width, 768, 1440, 768, 1440);
+      @include responsive(padding-top, 63, 200, 768, 1440);
       display: flex;
       justify-content: center;
       @include responsive(gap, 40, 124, 768, 1440);
@@ -125,6 +126,7 @@
 @media screen and (min-width: 1440px) {
   .testimonals {
     &__container {
+      padding-top: 200px;
       max-width: 1440px;
       gap: 124px;
     }
