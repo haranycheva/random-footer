@@ -24,7 +24,9 @@
   }
   &__info {
     max-width: 500px;
-    margin: 0 auto;
+    @media screen and (max-width: 1199.8px) {
+      margin: 0 auto;
+    }
   }
   &__title {
     margin-bottom: 65px;
@@ -90,7 +92,6 @@
     width: 304px;
     height: 355px;
     // box-shadow: 85px -47px 124px -41px rgba(89, 177, 230, 0.8);
-    margin: 0 auto;
     padding: 20px 24px 30px;
     border-radius: 26px;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
@@ -102,6 +103,9 @@
       85px -47px 124px -41px rgba(89, 177, 230, 0.8);
     @media screen and (min-width: 768px) {
       padding: 20px 24px 30px;
+    }
+    @media screen and (max-width: 1199.8px) {
+        margin: 0 auto;
     }
   }
   &__card > img {
